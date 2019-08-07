@@ -13,4 +13,4 @@ var total = monto + interes;
 // SALIDA
 alert("El pago mensual es de: " + pago);
 alert("El interes es de: " + total);
-alert("El total a pagar sera de: + total")
+alert("El total a pagar sera de:" + total)
