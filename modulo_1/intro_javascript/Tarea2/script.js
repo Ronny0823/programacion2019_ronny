@@ -58,27 +58,18 @@ else{
 */
 
 //7. Digitar un número y mostrar que día de la semana es. 
+var x = new Date();
+console.log(x.getDay());
+switch(x.getDay()) {
+    case 0:
+        console.log(`Domingo`);
+        break;
+}
 /*
-var diaDeLaSemana{
-    Lunes:1,
-    Martes:2,
-    Miercoles:3,
-    Jueves:4,
-    Viernes:5,
-    sabado:6,
-    Domingo:7,
-}
-*/
 10. //Imprimir los números pares del 1 al 100.
-
-var  a=2;
-while(  a<=100){
-    document.write("%d,-,a);
-    a++;
-}
-
-
-
-
-
-
+for(var i =0; i<=100; i++){
+    if(i%2==0){
+        document.write(i+"<br>")
+    }
+} 
+*/
