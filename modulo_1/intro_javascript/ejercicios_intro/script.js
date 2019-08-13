@@ -1,4 +1,4 @@
-alert("Bienvenido a mi pagina");
+ alert("Bienvenido a mi pagina");
 
 // Operaciones matematicas
 // Declarar variable sin valor, colocamos var y el nombre de la variable
