@@ -43,10 +43,37 @@ while (monto < 600){
 alert("Bienvenido a su cuenta nueva");
 */
 // 6.Hacer un programa que se digiteuna validacion para entrar a INFOTEP edad validar: 16 años
-var edad =  parseInt( prompt("Dijite su edad"));
+/*var edad =  parseInt( prompt("Dijite su edad"));
 
 while (edad < 16) {
     edad = parseInt(prompt("Escriba su edad corecta para entrar a infotep"));
 }
 
 alert("Bienvenido a infotep")
+*/
+// Hacer un  programa que solo se gigite números negativos
+/*var numero = parseInt( prompt("Dijite su numero negativo"));
+
+while (numero > 0) {
+    numero = parseInt(prompt("Dijite su numero negativo"));
+
+}*/
+/*
+do {
+    var numero = parseInt(prompt("Dijite su numero negativo"));
+} while (numero > 0);
+*/
+//Hacer un programa que se dijite  numeros positivos con do wlile
+/*do {
+    var numero = parseInt(prompt("Dijite su numero positivos par"));
+} while (numero < 0 || numero %2 === 1);
+*/
+//para negarlo
+/*do {
+    var numero = parseInt(prompt("Dijite su numero positivos par"));
+} while (!(numero > 0 && numero % 2 === 0));
+*/
+do {
+    var numero1 = prompt("Digite su contraseña");
+    var numero2 = prompt("Confirme su contraseña  su contraseña");
+} while (numero1 !== numero2);
