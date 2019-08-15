@@ -11,20 +11,29 @@ if (tarjeta.length > 12) {
 }
 
 // 2.Digitar pin
-if (pin.length > 4) {
-    alert(`pin invalido`)
-}
 var pin = prompt("Digite su PIN");
+
+while (pin.length !== 4) {
+    pin = prompt("Digite un  PIN válido");
+}
 
 // 4.Seleccionar opcion
 // 3.Mostrar opciones
-var opcion = prompt(`Selecione la opciones correctas: 
-Retiro
-Avance
-Chequear balance
-Depocito`);
+var opcion = prompt(`Selecione la opciones correctas:
+1.Retiro
+2.Avance
+3.Chequear balance
+4.Depocito`);
 
-
+while (opcion || 4 ) {
+    opcion = prompt(`Selecione la opciones correctas:
+   1. Retiro
+    2. Avance
+    3. Chequear balance
+    4. Depocito 
+ 
+    `);
+}
 
 // 5.Seleccionar tipo de cuenta
 var tipoDeCuenta = (`Seleccionar tipo de cuenta

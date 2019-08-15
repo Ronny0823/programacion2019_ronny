@@ -30,17 +30,29 @@ while (tarjeta != cliente.tarjeta) {
 // 2.Digitar pin
 var pin = prompt("Digite su PIN");
 
-if (pin.length > 4) {
-    alert(`pin invalido`)
+while (pin.length !== 4) {
+    pin = prompt("Digite un  PIN válido");
 }
+
 // 4.Seleccionar opcion
 // 3.Mostrar opciones
 var opcion = prompt(`Selecione la opciones correctas: 
-Retiro
-Avance
-Chequear balance
-Depocito`);
+1.Retiro
+2.Avance
+3.Chequear balance
+4.Depocito
+`);
 
+while (opcion > 4 || opcion < 1) {
+    opcion = prompt(`Selecione la opciones correctas:
+   1. Retiro
+    2. Avance
+    3. Chequear balance
+    4. Depocito 
+
+    
+`);
+}
 
 
 // 5.Seleccionar tipo de cuenta
@@ -48,6 +60,15 @@ var tipoDeCuenta = (`Seleccionar tipo de cuenta
 1.Cuenta de ahoro
 2.Tarjeta de credito
 3.Cuenta coriente`);
+
+while (tipoDeCuenta > 4 || tipoDeCuenta < 1) {
+   tipoDeCuenta = (`Seleccionar tipo de cuenta
+   1. Cuenta de ahoro
+   2. Tarjeta de credito
+   3. Cuenta coriente 
+
+`);
+}
 
 // 6. Mostrar opciones de monto
 // 7.Seleccionar monto
@@ -62,7 +83,19 @@ var opcionMonto = prompt(`Elija el monto que quiere usar:
 8.Otros
 `);
 
-
+while (opcionMonto > 8 || opcionMonto < 1) {
+   opcionMonto = prompt(`Elija el monto que quiere usar:
+   1.200 $
+   2.500 $
+   3.1000 $
+   4.1500 $
+   5.2000 $
+   6.2500 $
+   7.3000 $
+   8. Otros
+  
+`);
+}
 
 // 8.Mostrar opcion de recibo
 // 9.Elegir si o no del comprobate del recibo
