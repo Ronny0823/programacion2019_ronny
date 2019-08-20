@@ -1,33 +1,14 @@
-/*4. Calcular la hipotenusa de un triangulo
 
-var base = parseInt(prompt("Digite la base"));
-var altura = parseInt(prompt("Digite la altira"));
-var multiplicacion = base ** 2 + altura ** 2;
-
-console.log(Math.sqrt(multiplicacion));
-*/
-/*1. Digitar la base y la altura de un triángulo y calcular e imprimir la hipotenusa.
+1. Digitar la base y la altura de un triángulo y calcular e imprimir la hipotenusa.
 var base =  parseInt( prompt ("Digite la base"));
 var altura = parseInt( prompt ("Digite la altira"));
 var multiplicacion = base ** 2 + altura ** 2  ;
 
 console.log(Math.sqrt(multiplicacion));
-*/
 
-//9 numero par
-/*
-var  numero =  prompt ("Digite un numero");
-if (numero %2==0) {
-    console.log(`${numero} Es un numero par`);
-}
 
-else{
-    console.log(`${numero} no es un numero par`);
-}
-*/
+2 promedio
 
-//2 promedio
-/*
 var promedio1 = parseInt( prompt("Ingrese el primer valor"));
 var promedio2 = parseInt( prompt("Ingrese el segundo valor"));
 var promedio3 = parseInt( prompt("Ingrese el tercer valor"));
@@ -35,19 +16,35 @@ var promedio4 = parseInt( prompt("Ingrese el cuarto valor"));
 
 var suma = (promedio1 + promedio2 + promedio3 + promedio4)/4 ;
 console.log(suma)
-*/
 
-//5. Imprimir los números del 1 al 100
-/*
+
+3. Calcular la distancia recorrida(Buscar formula de la distancia)
+var velocidad = parseInt( prompt("Dijite su velocidad"));
+var tiempo = parseInt( prompt("Dijite su tiempo"));
+var multiplicacion = velocidad * tiempo;
+
+console.log(`${multiplicacion}: mtr`);
+
+
+4. Calcular la hipotenusa de un triangulo
+
+var base = parseInt(prompt("Digite la base"));
+var altura = parseInt(prompt("Digite la altira"));
+var multiplicacion = base ** 2 + altura ** 2;
+
+console.log(Math.sqrt(multiplicacion));
+
+5. Imprimir los números del 1 al 100
+
 var base = 0;
 while(base <=100){
     document.write(base+ "<br/>");
     base++;
 }
-*/
 
-//6. Digitar el año de nacimiento e imprimir la edad actual
-/*
+
+6. Digitar el año de nacimiento e imprimir la edad actual
+
 var validacion = {
     ano: parseInt( prompt("Digite su año de nacimiento")),
     
@@ -61,10 +58,10 @@ if (validacion.ano > 0) {
 else{
     document.write(`<h1> Tu año es negativo </h1>`);
 }
-*/
 
-//7. Digitar un número y mostrar que día de la semana es. 
-/*
+
+7. Digitar un número y mostrar que día de la semana es. 
+
 var dia = parseInt( prompt("Dijite un numero para mostrar un dia de la semana"));
 
 if (dia === 1) {
@@ -82,20 +79,10 @@ if (dia === 1) {
 } else if (dia === 7) {
     console.log("Domingo");
 }
-*/
 
 
-/*
-10. //Imprimir los números pares del 1 al 100.
-for(var i =0; i<=100; i++){
-    if(i%2==0){
-        document.write(i+"<br>")
-    }
-} 
-*/
-
-//8. Digitar un número y mostrar qué mes del año es.Validar que no se pueda digitar un número que no sea mayor que 12 o menor que 1.
-/*var mes = parseInt(prompt("Dijite un numero para mostrar un mes del año"));
+8. Digitar un número y mostrar qué mes del año es.Validar que no se pueda digitar un número que no sea mayor que 12 o menor que 1.
+var mes = parseInt(prompt("Dijite un numero para mostrar un mes del año"));
 
 if (mes === 1) {
     console.log("Enero");
@@ -106,7 +93,7 @@ if (mes === 1) {
 } else if (mes === 4) {
     console.log("Abril");
 } else if (mes === 5) {
-    console.log("	Mayo");
+    console.log("Mayo");
 } else if (mes === 6) {
     console.log("Junio");
 } else if (mes === 7) {
@@ -126,6 +113,27 @@ if (mes === 1) {
 }
 } else if (mes === 12) {
     console.log("Diciembre");
-}*/
-//3. Calcular la distancia recorrida(Buscar formula de la distancia)
-var distancia = parseInt( prompt("Dijite un numero"))
+}
+
+
+9 numero par
+
+var  numero =  prompt ("Digite un numero");
+if (numero %2==0) {
+    console.log(`${numero} Es un numero par`);
+}
+
+else{
+    console.log(`${numero} no es un numero par`);
+}
+
+
+
+10. Imprimir los números pares del 1 al 100.
+for(var i =0; i<=100; i++){
+    if(i%2==0){
+        document.write(i+"<br>")
+    }
+} 
+
+
