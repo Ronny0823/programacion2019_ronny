@@ -20,12 +20,13 @@
    if ( isset($_GET['busqueda'])) {
        $buscar= $_GET['buscar'];
 
-     echo  "<d> class='alert alert-success' style='margin-right: 900px''>
-     <p>"Resultado que coicinden con <b>$buscar</b></p>";
+     echo  "<div class='alert alert-success' style='margin-right: 900px'>
+                 <p>Resultado que coicinden con <b>$buscar</b></p>
+            </div>";
    }
-   </div>;
+   
   ?>
-<
+
 
 </body>
 </html>
