@@ -1,3 +1,7 @@
+<?php
+ session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -22,18 +26,30 @@
     </div>
   </div>
   <button type="submit" name="guardar" class="btn btn-primary">guardar</button>
+  <br>
+  <a href="listado.php">ir al listado</a>
+</form>
 <?php
+if (!isset($_SESSION['publicaciones'])) {
+  $_SESSION['publicaciones'] = [];
+  
+}
+
  if(isset($_POST['guardar'])) {
    $datos = new stdClass();
-   $datos ->nombre = $_POST['nombre'];
-    $datos ->url = $_POST['url'];
+   $datos->nombre = $_POST['nombre'];
+    $datos->url = $_POST['url'];
 
 
 
  echo "<pre>";
  print_r($datos);
  echo "</pre>";
+
+ // Agregar los datos a la SESSION
+ array_push($_SESSION['publicaciones'], $datos);
   }
+ 
 ?>
 
 </body>
