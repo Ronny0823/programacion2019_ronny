@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
 </head>
 <body>
 <div class="container">
@@ -12,27 +13,47 @@
             <div class="col-md-6">
                 <form method="post">
                     <div class="form-group">
-                    <input type="number" name="num1">
-                    <br>
-                    <input type="number" name="num2">
-                    <br>
+                    <input type="number" name="n1">
+                    </div>
+
+                     <div class="form-group">
+                    <input type="number" name="n2">
+                     </div>
+
+                     <div class="form-group">
+                     <input type="number" name="n3">
+                      </div>
+
+                     <div class="form-group">
+                    <input type="number" name="n4">
+                     </div>
+
+                     <div class="form-group">
                     <button type="submit" name="exe" class="btn btn-dark">Sumar</button>
+                     </div>
+
                 </div>
+             </div>
+     </div>            
                 </form>
     <?php
-    $num1=$_POST['n1'];
-    $num2=$_POST['n2'];
-    $num3=$_POST['n3'];
-    $num4=$_POST['n4'];
+    if (isset($_POST['exe'])) {
+      
+    
+    $n1=$_POST['n1'];
+    $n2=$_POST['n2'];
+    $n3=$_POST['n3'];
+    $n4=$_POST['n4'];
 
-    $prom=($num1 + $num2 + $num3 + $num4)/4;
+    $prom=$n1 + $n2 + $n3 + $n4;
+    $div=4;
 
-    echo "Los valores de los numeros son:" .$num1;
-    echo "Los valores de los numeros son:" .$num2;
-    echo "Los valores de los numeros son:" .$num3;
-    echo "Los valores de los numeros son:" .$num4;
-    echo "Los valores de los numeros son:" .$prom;
+    
 
+    $resultado=$prom/$div;
+
+    echo "promedio: $resultado";
+    }
 
 
 
