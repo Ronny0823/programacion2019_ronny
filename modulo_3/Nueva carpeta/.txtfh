@@ -1,0 +1,19 @@
+
+// cambia el nombre de una tabla
+RENAME TABLE nombre_tabla TO nombre_nuevo_tabla
+
+
+// agregar un campo en una tabla
+ALTER TABLE estudiantes add apellido varchar(100);
+
+//unir dos o mas tabla
+SELECT e.id, e.id apellido, ec.correo, et.telefono 
+FROM estudiantes e 
+INNER JOIN estudiantes_correos ec on (e.id = ec.id) 
+INNER JOIN estudiantes_telefono et on (e.id = et.id)
+
+//actualisar una tabla
+
+UPDATE estudiantes_correos
+SET correo = "wentcherlle@gmail.com"
+WHERE id = 5
