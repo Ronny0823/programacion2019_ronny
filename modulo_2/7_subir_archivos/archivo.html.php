@@ -6,6 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Subir archivos</title>
     <link rel="stylesheet" href="bootstrap.css">
+    <style>
+    body{
+
+        background-image: url("Anime Girl Snowfall.jpg");
+        background-repeat: no-repeat;
+    }
+    
+    </style>
 </head>
 <body>
 
