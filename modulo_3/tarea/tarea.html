@@ -1,0 +1,10 @@
+// # select 	id_titulo, tipo, avance
+from		titulos
+where	(tipo = 'business' or tipo='mod_cook')
+    and		avance > 5000
+
+    select 	id_titulo, tipo, avance
+					from		titulos
+					where	(tipo = 'business' or tipo='mod_cook')
+						and		avance > 5000 
+                        and 	total_ventas < 

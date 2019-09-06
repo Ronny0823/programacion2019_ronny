@@ -9,7 +9,7 @@
     <style>
     body{
 
-        background-image: url("Anime Girl Snowfall.jpg");
+        background-image: url("ronny.gif");
         background-repeat: no-repeat;
     }
     

@@ -17,9 +17,10 @@ var mesa = {
     hayMesa: false,
     hayTenedor: false,
 }
-if (mesa.hayMesa || mesa.hayTenedor) {
+
+if.else (mesa.hayMesa ll mesa.hayTenedor){ 
     console.log(`puedo comer`);
-}
-else{
+    if
     console.log(`no puedo comer`);    
+    
 }
