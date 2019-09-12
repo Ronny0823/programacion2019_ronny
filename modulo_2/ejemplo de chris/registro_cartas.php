@@ -1,31 +1,33 @@
 <?php
 
-//Guardar los datos
+require_once 'conexion.php';
+
 try {
+    // Guardar los datos
     if (isset($_POST['guardar'])) {
-  $nombre = $_POST['name'];
-  $url = $_POST['link'];
-  $precio = $_POST['price'];
+        $nombre = $_POST['name'];
+        $url = $_POST['link'];
+        $precio = $_POST['price']; 
 
- // validaciones
- if (empty($nombre)) {
-     throw new Exception("El nombre no puede estar vacio", 1);
- }
+        // Validaciones
+        if (empty($nombre)) {
+            throw new Exception("El nombre no puede estar vacio", 1);
+        }
 
-  if (empty($url)) {
-     throw new Exception("El link no puede estar vacio", 2);
- }
+        if (empty($url)) {
+            throw new Exception("El link no puede estar vacio", 2);
+        }
 
-  if (empty($precio)) {
-     throw new Exception("El precio no puede estar vacio", 3);
- }
+        if (empty($precio)) {
+            throw new Exception("El precio no puede estar vacio", 3);
+        }
 
-  if (intval($precio) < 15) {
-     throw new Exception("El precio no puede ser menor que 15", 3);
- }
+        if (intval($precio) < 15) {
+            throw new Exception("El precio no puede ser menor que 15", 4);
+        }
 
- //Insertar
- $sql = "INSERT INTO cartas
+        // Insertar     
+        $sql = "INSERT INTO cartas
                 (name, link, price)
                 VALUES
                 (\"$nombre\", \"$url\", \"$precio\")";
@@ -40,16 +42,16 @@ try {
 
         echo $mensaje;
 
+    }    
+
+} catch(Exception $e) {
+    
+    $error = [
+        'codigo' => $e->getCode(),
+        'mensaje' => $e->getMessage()
+    ];
+
 }
 
-
-   
-} catch (Exception $e) {
-   $error = [
-       'codigo' => $e->getCode(),
-       'mensaje' => $e->getMessage()
-   ];
-}
-
-// incluir la vista
+// Incluir la vista
 require_once 'vistas/registro_cartas.html.php';
