@@ -2,7 +2,7 @@
 
 try {
     $DB_HOST = "localhost";
-    $DB_NAME = "app";
+    $DB_NAME = "cart";
     $DB_USER = "root";
     $DB_PASS = "";
     $config = [
@@ -12,5 +12,5 @@ try {
     $conexion = new PDO("mysql:host=$DB_HOST;dbname=$DB_NAME", $DB_USER, $DB_PASS, $config);
     
 } catch(PDOException $pdo) {
-    echo $pdo->getMessage();
+    die( $pdo->getMessage() );
 }

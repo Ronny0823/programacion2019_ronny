@@ -12,7 +12,7 @@
         <div class="row">
             <div class="col-md-5">
                 <!-- Formulario de Registro -->
-                <form method="post">
+                <form class="form-signin" method="post">
                     <h3>Registro de Cartas</h3>
                     <a href="lista_cartas.php">Ver lista de cartas</a>
                     <hr>
