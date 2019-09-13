@@ -48,7 +48,11 @@
                         <button type="submit" name="guardar" class="btn btn-primary">Guardar</button>
                     </div>
                 </form>
-
+                        <?php
+                            if (isset($error)) {
+                                echo $error['mensaje'];
+                            }
+                        ?>
             </div>
         </div>
     </div>

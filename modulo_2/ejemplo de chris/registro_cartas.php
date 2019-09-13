@@ -27,7 +27,9 @@ try {
         }
 
         // Verificar que no exista en la base de datos
-        $sql = "SELECT id, name, FROM cartas WHERE name LIKE '%nombre%'";
+        $sql = "SELECT id, name FROM cartas WHERE name LIKE '%$nombre%'";
+
+       
 
         $datos2 = $conexion->query($sql)->fetchAll();
 
