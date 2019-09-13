@@ -30,6 +30,14 @@
                                 <h5 class="card-title">'. $dato['name'] .'</h5>
                                 <p class="card-text text-success">$ '.$dato['price'].'</p>
                                 <a href="ver_carta.php?id='.$dato['id'].'" class="btn btn-primary">Ver carta</a>
+
+                                <form method="post" action="borrar_carta.php">
+                                    <input type="hidden" name="id" value="'.$dato['id'].'">
+                                    
+                                    <button class="btn btn-danger" name="borrar">Borrar</button> 
+                                  
+                                    
+                                </form>
                             </div>
                         </div>';
                 }
