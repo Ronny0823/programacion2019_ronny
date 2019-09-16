@@ -3,8 +3,8 @@
 // Incluir la conexion
 
 require_once 'conexion.php';
-
-$sql = "SELECT id, name, link, price FROM cartas ORDER BY id DESC";
+// estrar todas las cartas
+$sql = "SELECT id, name, link, price FROM cartas WHERE  activo = 1  ORDER BY id DESC";
 
 // Ejecutar el query y traer todo los datos
 $datos = $conexion->query($sql)->fetchAll();
