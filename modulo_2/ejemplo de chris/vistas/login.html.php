@@ -14,6 +14,7 @@
         <input type="text" name="username" placeholder="Username">
         <input type="password" name="password" placeholder="Password">
         <input type="submit" name="login" value="Login">
+        <a href="registro_usuario.php">Registrate</a>
     </form>
     
 </body>

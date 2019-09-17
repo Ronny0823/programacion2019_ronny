@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 16-09-2019 a las 18:23:21
+-- Tiempo de generación: 17-09-2019 a las 18:28:30
 -- Versión del servidor: 10.1.37-MariaDB
 -- Versión de PHP: 7.2.13
 
@@ -33,18 +33,41 @@ CREATE TABLE `cartas` (
   `name` varchar(100) NOT NULL,
   `link` varchar(200) NOT NULL,
   `price` float NOT NULL,
-  `activo` tinyint(4) DEFAULT '1'
+  `activo` tinyint(4) DEFAULT '1',
+  `created_by` bigint(20) NOT NULL DEFAULT '0',
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `cartas`
 --
 
-INSERT INTO `cartas` (`id`, `name`, `link`, `price`, `activo`) VALUES
-(9, 'ddtg', 'https://img-corp.net/assets/img/IMG_logo_big_blue.png', 16, 0),
-(10, 'rg', 'https://www.imgworlds.com/wp-content/themes/IMG2019/img/phase3/slides/img-img.png', 68, 1),
-(11, '21', 'https://img-corp.net/assets/img/IMG_logo_big_blue.png', 19, 1),
-(12, 'fvf', 'https://www.imgacademy.com/sites/default/files/homepage-hero-2019-q1-edited-tennis-bg.jpg', 19, 0);
+INSERT INTO `cartas` (`id`, `name`, `link`, `price`, `activo`, `created_by`, `created_at`) VALUES
+(9, 'ddtg', 'https://img-corp.net/assets/img/IMG_logo_big_blue.png', 16, 0, 0, '2019-09-17 15:54:12'),
+(10, 'rg', 'https://www.imgworlds.com/wp-content/themes/IMG2019/img/phase3/slides/img-img.png', 68, 1, 0, '2019-09-17 15:54:12'),
+(11, '21', 'https://img-corp.net/assets/img/IMG_logo_big_blue.png', 19, 1, 0, '2019-09-17 15:54:12'),
+(12, 'fvf', 'https://www.imgacademy.com/sites/default/files/homepage-hero-2019-q1-edited-tennis-bg.jpg', 19, 0, 0, '2019-09-17 15:54:12');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `registro`
+--
+
+CREATE TABLE `registro` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `nombre` varchar(100) NOT NULL,
+  `usuario` varchar(50) NOT NULL,
+  `contrasena` varchar(90) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `registro`
+--
+
+INSERT INTO `registro` (`id`, `nombre`, `usuario`, `contrasena`) VALUES
+(1, 'ronny', 'ronny08', '1234'),
+(2, 'c', 'ch', '1');
 
 -- --------------------------------------------------------
 
@@ -79,6 +102,12 @@ ALTER TABLE `cartas`
   ADD UNIQUE KEY `name` (`name`);
 
 --
+-- Indices de la tabla `registro`
+--
+ALTER TABLE `registro`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indices de la tabla `users`
 --
 ALTER TABLE `users`
@@ -93,6 +122,12 @@ ALTER TABLE `users`
 --
 ALTER TABLE `cartas`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
+--
+-- AUTO_INCREMENT de la tabla `registro`
+--
+ALTER TABLE `registro`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `users`
