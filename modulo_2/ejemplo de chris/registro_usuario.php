@@ -35,7 +35,7 @@ try {
         }
 
         // Encriptar la contrasena
-        $password = password_hash($password);
+        $password = password_hash($password, PASSWORD_DEFAULT);
 
         // Insertar     
         $sql = "INSERT INTO users
