@@ -15,6 +15,17 @@
         <input type="password" name="password" placeholder="Password">
         <input type="submit" name="login" value="Login">
         <a href="registro_usuario.php">Registrate</a>
+
+        <div>
+            <?php 
+
+            if (isset($error)) {
+                echo $error["mensaje"];
+            }
+            
+            ?>
+        </div>
+
     </form>
     
 </body>
