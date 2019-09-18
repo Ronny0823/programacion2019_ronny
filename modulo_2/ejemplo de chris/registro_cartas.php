@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 require_once 'conexion.php';
 
 try {
@@ -38,10 +40,11 @@ try {
         }
 
          $id_user = $_SESSION['id_user'];
+         
 
         // Insertar     
         $sql = "INSERT INTO cartas
-                (name, link, price, create_by)
+                (name, link, price, created_by)
                 VALUES
                 (\"$nombre\", \"$url\", \"$precio\", $id_user)";
 

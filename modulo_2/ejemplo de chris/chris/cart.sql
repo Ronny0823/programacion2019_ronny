@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 17-09-2019 a las 18:28:30
+-- Tiempo de generación: 18-09-2019 a las 16:50:19
 -- Versión del servidor: 10.1.37-MariaDB
 -- Versión de PHP: 7.2.13
 
@@ -44,9 +44,11 @@ CREATE TABLE `cartas` (
 
 INSERT INTO `cartas` (`id`, `name`, `link`, `price`, `activo`, `created_by`, `created_at`) VALUES
 (9, 'ddtg', 'https://img-corp.net/assets/img/IMG_logo_big_blue.png', 16, 0, 0, '2019-09-17 15:54:12'),
-(10, 'rg', 'https://www.imgworlds.com/wp-content/themes/IMG2019/img/phase3/slides/img-img.png', 68, 1, 0, '2019-09-17 15:54:12'),
-(11, '21', 'https://img-corp.net/assets/img/IMG_logo_big_blue.png', 19, 1, 0, '2019-09-17 15:54:12'),
-(12, 'fvf', 'https://www.imgacademy.com/sites/default/files/homepage-hero-2019-q1-edited-tennis-bg.jpg', 19, 0, 0, '2019-09-17 15:54:12');
+(10, 'rg', 'https://www.imgworlds.com/wp-content/themes/IMG2019/img/phase3/slides/img-img.png', 68, 0, 0, '2019-09-17 15:54:12'),
+(11, '21', 'https://img-corp.net/assets/img/IMG_logo_big_blue.png', 19, 0, 0, '2019-09-17 15:54:12'),
+(12, 'fvf', 'https://www.imgacademy.com/sites/default/files/homepage-hero-2019-q1-edited-tennis-bg.jpg', 19, 0, 0, '2019-09-17 15:54:12'),
+(13, 'rere', 'http://www.aerocivil.gov.co/Style%20Library/Aerocivil/img/img.jpg', 22, 0, 6, '2019-09-18 14:47:45'),
+(14, '1554', 'http://www.aerocivil.gov.co/Style%20Library/Aerocivil/img/img.jpg', 565, 1, 6, '2019-09-18 14:48:53');
 
 -- --------------------------------------------------------
 
@@ -67,7 +69,10 @@ CREATE TABLE `registro` (
 
 INSERT INTO `registro` (`id`, `nombre`, `usuario`, `contrasena`) VALUES
 (1, 'ronny', 'ronny08', '1234'),
-(2, 'c', 'ch', '1');
+(2, 'c', 'ch', '1'),
+(3, 'juan', 'juan', '1234'),
+(4, '', '', ''),
+(5, '', '', '');
 
 -- --------------------------------------------------------
 
@@ -88,7 +93,12 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `username`, `password`, `active`) VALUES
-(1, 'ronny', 'ronny', '1234', 1);
+(1, 'ronny', 'ronny', '1234', 1),
+(2, 'cristian', 'cris', '123', 1),
+(3, 'erer', 'r', '', 1),
+(4, 'ttt', 't', '', 1),
+(5, 'juan08', 'juan', '', 1),
+(6, 'rene', 'rene08', '$2y$10$SP.uhIcYmmLkhw10N5zg5uvGsx3QvP5zlScVq.5yVCthBBFkQj6V6', 1);
 
 --
 -- Índices para tablas volcadas
@@ -121,19 +131,19 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT de la tabla `cartas`
 --
 ALTER TABLE `cartas`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT de la tabla `registro`
 --
 ALTER TABLE `registro`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
