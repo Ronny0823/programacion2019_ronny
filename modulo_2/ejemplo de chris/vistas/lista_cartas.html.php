@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lista de cartas</title>
     <link rel="stylesheet" href="css/bootstrap.css">
+    
 </head>
 <body>
     <div class="container">
@@ -13,6 +14,7 @@
             <h3 class="col-md-12">
                 Lista de cartas
                 <a href="registro_cartas.php">Registrar cartas</a>
+                <a href="login.php">Cerrar cesion</a>
                 <hr>
             </h3>
                 <form class="col-md-12 mb-3">

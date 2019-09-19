@@ -16,6 +16,13 @@
 <span class="fontawesome-lock"></span><input type="password" name="password" id="password" required placeholder="Contraseña" autocomplete="off"> 
 			<input type="submit" name='guardar' value="Registrar" title="Registra tu cuenta">
 
+      <?php
+
+      if(isset($error)){
+        echo "<div style='color:white'>{$error['mensaje']}</div>";
+      }
+
+      ?>
   
 </body>
 </html>

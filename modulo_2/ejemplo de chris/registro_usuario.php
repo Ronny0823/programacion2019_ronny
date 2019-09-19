@@ -70,6 +70,9 @@ catch(Exception $e) {
     ];
 
 
+    print_r($error);
+
+
 }
 
 require_once 'vistas/registro_usuario.html.php';

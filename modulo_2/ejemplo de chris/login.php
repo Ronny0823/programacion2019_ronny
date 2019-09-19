@@ -2,6 +2,12 @@
 
 session_start();
 
+// Vericar si elusuariono esta logeado
+if(!isset($_SESSION['id_user'])){
+    header("location: lista_cartas.php");
+    exit;
+}
+
 require_once 'conexion.php';
 
 
@@ -26,7 +32,7 @@ try {
         $_SESSION['id_user'] = $resultado->id;
         $_SESSION['name_user'] = $resultado->name;
 
-        header("Location: lista_cartas.php");
+        header("Location: registro_cartas.php");
         exit;
     }
     else {

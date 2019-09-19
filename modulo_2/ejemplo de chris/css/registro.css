@@ -1,7 +1,7 @@
 
 
 body {
-    background: #1b1e24;
+/* background: #1b1e24; */
     background-image: -webkit-linear-gradient(right, #1b1e24, #1b1e24 50%, #1b1e24);
     background-image: -moz-linear-gradient(right, #1b1e24, #1b1e24 50%, #1b1e24);
     background-image: -o-linear-gradient(right, #1b1e24, #1b1e24 50%, #1b1e24);

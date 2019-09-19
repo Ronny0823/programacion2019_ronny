@@ -4,7 +4,9 @@
 
 require_once 'conexion.php';
 // estrar todas las cartas
-$sql = "SELECT id, name, link, price FROM cartas WHERE  activo = 1  ORDER BY id DESC";
+$sql= "SELECT c.id, c.name, c.link, c.price, u.name FROM cartas c
+INNER JOIN users u ON (u.id =c.created_by)
+WHERE c.activo = 1 ORDER BY id DESC";
 
 // Ejecutar el query y traer todo los datos
 $datos = $conexion->query($sql)->fetchAll();

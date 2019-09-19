@@ -4,6 +4,12 @@ session_start();
 
 require_once 'conexion.php';
 
+// Vericarsi elusuariono estalogeado
+if(!isset($_SESSION['id_user'])){
+    header("location: login.php");
+    exit;
+}
+
 try {
     // Guardar los datos
     if (isset($_POST['guardar'])) {

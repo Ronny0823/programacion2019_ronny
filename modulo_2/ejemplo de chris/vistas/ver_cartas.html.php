@@ -11,10 +11,10 @@
     <div class="container">
         <div class="row">
             <div class="col-md-5">
-            <img src="<?php $carta->link; ?>" alt="imagen">
-            <h1 class="display-3"><?php $carta->name;?></h1>
+            <img src="<?= $carta->link; ?>" alt="imagen">
+            <h1 class="display-3"><?= $carta->name;?></h1>
 
-            <p class="text-success"><?php $carta->price;?></p>
+            <p class="text-success"><?= $carta->price;?></p>
             
             <p>Esta es una descricion</p>
             
