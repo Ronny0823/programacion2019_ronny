@@ -3,7 +3,7 @@
 session_start();
 
 // Vericar si elusuariono esta logeado
-if(!isset($_SESSION['id_user'])){
+if(isset($_SESSION['id_user'])){
     header("location: lista_cartas.php");
     exit;
 }

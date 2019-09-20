@@ -4,7 +4,7 @@
 
 require_once 'conexion.php';
 // estrar todas las cartas
-$sql= "SELECT c.id, c.name, c.link, c.price, u.name FROM cartas c
+$sql= "SELECT c.id, c.name, c.link, c.price, u.name AS created_by FROM cartas c
 INNER JOIN users u ON (u.id =c.created_by)
 WHERE c.activo = 1 ORDER BY id DESC";
 

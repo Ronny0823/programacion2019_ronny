@@ -14,7 +14,7 @@
             <h3 class="col-md-12">
                 Lista de cartas
                 <a href="registro_cartas.php">Registrar cartas</a>
-                <a href="login.php">Cerrar cesion</a>
+                <a href="logout.php">Cerrar sesion</a>
                 <hr>
             </h3>
                 <form class="col-md-12 mb-3">
@@ -35,9 +35,10 @@
 
                                 <form method="post" action="borrar_carta.php">
                                     <input type="hidden" name="id" value="'.$dato->id.'">
-                                    
+                                    <br>
+
                                     <button class="btn btn-danger" name="borrar">Borrar</button> 
-                                  
+                                    <small>Created by: '.$dato->created_by.'</small>
                                     
                                 </form>
                             </div>
