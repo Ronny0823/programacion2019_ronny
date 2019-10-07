@@ -1,0 +1,9 @@
+C:\xampp\htdocs\MiPrimeraAplicación\MiPrimeraAplicación\bin\Debug\MiPrimeraAplicación.exe.config
+C:\xampp\htdocs\MiPrimeraAplicación\MiPrimeraAplicación\bin\Debug\MiPrimeraAplicación.exe
+C:\xampp\htdocs\MiPrimeraAplicación\MiPrimeraAplicación\bin\Debug\MiPrimeraAplicación.pdb
+C:\xampp\htdocs\MiPrimeraAplicación\MiPrimeraAplicación\obj\Debug\MiPrimeraAplicación.csprojResolveAssemblyReference.cache
+C:\xampp\htdocs\MiPrimeraAplicación\MiPrimeraAplicación\obj\Debug\MiPrimeraAplicación.Form1.resources
+C:\xampp\htdocs\MiPrimeraAplicación\MiPrimeraAplicación\obj\Debug\MiPrimeraAplicación.Properties.Resources.resources
+C:\xampp\htdocs\MiPrimeraAplicación\MiPrimeraAplicación\obj\Debug\MiPrimeraAplicación.csproj.GenerateResource.Cache
+C:\xampp\htdocs\MiPrimeraAplicación\MiPrimeraAplicación\obj\Debug\MiPrimeraAplicación.exe
+C:\xampp\htdocs\MiPrimeraAplicación\MiPrimeraAplicación\obj\Debug\MiPrimeraAplicación.pdb

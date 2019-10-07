@@ -1,0 +1,94 @@
+.{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body{
+    font-family: sans-serif;
+    font-size: 20px;
+    background-color: black;
+    background-image: url(../trabajo_personal/img/bg-header-black-3.jpg);
+    background-size: cover;
+
+}
+
+p{
+    margin-bottom: 30px;
+}
+.texto{
+    font-weight: 400;
+
+}
+
+/*header*/
+.contenido{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    
+
+    background-image: url(../trabajo_personal/img/bg-header-black-3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 100px 150px rgba(0,0,8);
+
+}
+
+.texto-encabesado{
+    color: #fff;
+}
+.texto-encabesado .icono{
+    font-size: 60px;
+}
+
+.texto-encabesado .titulo{
+    font-weight: 800;
+    font-size: 50px;
+    animation: azul-neon 2s infinite
+}
+
+
+.texto-encabesado .icono i{
+    margin-bottom: 0;
+    font-size: 60px;
+    animation: naranja-neon 2s infinite
+}
+
+/*animacon*/
+
+@keyframes azul-neon{
+    0%, 10%, 15%, 20%, 30%, 35%, 40%, 50%, 60%, 70%, 75%, 80%, 85%, 90%, 100%{
+        text-shadow: 12px 12px 20px #3485ff, 
+                    5px 5px 10px #00246c, 
+                    -5px -5px 10px #00246c,
+                    -9px -9px 27px #3485ff;
+    }
+
+
+    10%, 15%, 60% {
+        text-shadow: none;
+    } 
+}
+
+@keyframes naranja-neon{
+    0%, 10%, 15%, 20%, 30%, 35%, 40%, 50%, 60%, 70%, 75%, 80%, 85%, 90%, 100%{
+        text-shadow: 0 -22px 80px #fff, 
+                     0 -44px 80px  #ff0, 
+                     0 -50px -90px #ff8000;
+                    
+    }
+
+
+    10%, 15%, 60% {
+        text-shadow: none;
+    } 
+}
