@@ -1,0 +1,9 @@
+C:\xampp\htdocs\programacion2019_ronny\modulo_5\Aplicasion 1\Aplicasion 1\bin\Debug\Aplicasion 1.exe.config
+C:\xampp\htdocs\programacion2019_ronny\modulo_5\Aplicasion 1\Aplicasion 1\bin\Debug\Aplicasion 1.exe
+C:\xampp\htdocs\programacion2019_ronny\modulo_5\Aplicasion 1\Aplicasion 1\bin\Debug\Aplicasion 1.pdb
+C:\xampp\htdocs\programacion2019_ronny\modulo_5\Aplicasion 1\Aplicasion 1\obj\Debug\Aplicasion 1.csprojResolveAssemblyReference.cache
+C:\xampp\htdocs\programacion2019_ronny\modulo_5\Aplicasion 1\Aplicasion 1\obj\Debug\Aplicasion_1.Form1.resources
+C:\xampp\htdocs\programacion2019_ronny\modulo_5\Aplicasion 1\Aplicasion 1\obj\Debug\Aplicasion_1.Properties.Resources.resources
+C:\xampp\htdocs\programacion2019_ronny\modulo_5\Aplicasion 1\Aplicasion 1\obj\Debug\Aplicasion 1.csproj.GenerateResource.Cache
+C:\xampp\htdocs\programacion2019_ronny\modulo_5\Aplicasion 1\Aplicasion 1\obj\Debug\Aplicasion 1.exe
+C:\xampp\htdocs\programacion2019_ronny\modulo_5\Aplicasion 1\Aplicasion 1\obj\Debug\Aplicasion 1.pdb
