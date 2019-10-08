@@ -77,7 +77,6 @@
             // 
             // txtnombre
             // 
-            this.txtnombre.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtnombre.Location = new System.Drawing.Point(12, 42);
             this.txtnombre.Name = "txtnombre";
             this.txtnombre.Size = new System.Drawing.Size(118, 20);
