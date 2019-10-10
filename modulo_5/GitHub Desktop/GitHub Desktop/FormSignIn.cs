@@ -27,6 +27,8 @@ namespace GitHub_Desktop
 
             //Cerrar el actual
             //this.Close();
+
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -43,6 +45,52 @@ namespace GitHub_Desktop
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             System.Diagnostics.Process.Start("https://github.com/login");
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+           
+            //if ((txtUsername.Text != "") && (txtPassword.Text != "")) txtSignIn.Enabled = true;
+            //else txtSignIn.Enabled = false;
+
+            var longitudUsername = txtUsername.Text.Length;
+            var longitudPassword = txtPassword.Text.Length;
+
+           if (longitudUsername > 0 && longitudPassword > 0)
+           {
+               btnSignIn.Enabled = true;
+           }
+           else
+           {
+               btnSignIn.Enabled = false;
+           }
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            var longitudUsername = txtUsername.Text.Length;
+            var longitudPassword = txtPassword.Text.Length;
+
+            if (longitudUsername > 0 && longitudPassword > 0)
+            {
+                btnSignIn.Enabled = true;
+            }
+            else
+            {
+                btnSignIn.Enabled = false;
+            }
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

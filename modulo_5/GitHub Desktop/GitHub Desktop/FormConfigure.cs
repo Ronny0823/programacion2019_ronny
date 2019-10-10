@@ -39,5 +39,15 @@ namespace GitHub_Desktop
             // ceramos el formSignIn
             this.Close();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            lblCommit.Text = txtName.Text + " commited 30 minutes ago";
+        }
+
+        private void FormConfigure_MouseLeave(object sender, EventArgs e)
+        {
+
+        }
     }
 }
