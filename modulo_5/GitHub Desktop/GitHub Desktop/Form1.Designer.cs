@@ -129,9 +129,9 @@
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(600, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(484, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(680, 717);
+            this.pictureBox1.Size = new System.Drawing.Size(680, 400);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
@@ -141,7 +141,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1280, 717);
+            this.ClientSize = new System.Drawing.Size(1164, 400);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.linkLabel4);
             this.Controls.Add(this.linkLabel3);

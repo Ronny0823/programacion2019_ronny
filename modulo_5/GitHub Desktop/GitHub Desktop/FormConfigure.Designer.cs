@@ -84,7 +84,6 @@
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(451, 20);
             this.txtName.TabIndex = 3;
-            this.txtName.Text = "r";
             this.txtName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label4
@@ -134,9 +133,9 @@
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(604, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(521, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(680, 721);
+            this.pictureBox1.Size = new System.Drawing.Size(680, 509);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
@@ -188,13 +187,12 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(455, 74);
             this.label8.TabIndex = 19;
-            this.label8.UseWaitCursor = true;
             // 
             // FormConfigure
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1284, 721);
+            this.ClientSize = new System.Drawing.Size(1201, 509);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.lblCommit);
             this.Controls.Add(this.label5);
@@ -211,6 +209,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FormConfigure";
             this.Text = "FormConfigure";
+            this.TransparencyKey = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.MouseLeave += new System.EventHandler(this.FormConfigure_MouseLeave);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

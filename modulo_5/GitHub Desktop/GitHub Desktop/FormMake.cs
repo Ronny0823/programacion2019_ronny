@@ -27,5 +27,10 @@ namespace GitHub_Desktop
         {
             System.Diagnostics.Process.Start("https://desktop.github.com/usage-data");
         }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            btnFinish.Enabled = chkUsage.Checked;
+        }
     }
 }
