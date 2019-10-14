@@ -29,33 +29,105 @@ namespace moviminto
            // MessageBox.Show(posicionX.ToString());
            // MessageBox.Show(posicionY.ToString());
 
-           
 
-            if (keyValue == 37)
+            //1
+            if (keyValue == 37 || keyValue == 65)
             {
-                label1.Location = new System.Drawing.Point(posicionX - 5, posicionY);
-                label3.Text = label1.Location.ToString();
+                if(posicionX <= 22)
+                {
+                    return;
+                }
+                else{
+                    label1.Location = new System.Drawing.Point(posicionX - 5, posicionY);
+                    label3.Text = label1.Location.ToString();
+                }
+                
                 //MessageBox.Show("izquierda");
             }
-
-
-            if(keyValue == 39)
+            //Resetear el juego
+            if (keyValue == 82)
             {
-                label1.Location = new System.Drawing.Point(posicionX + 5, posicionY);
-                label1.Location = new System.Drawing.Point(posicionX , posicionY -5);
-                label3.Text = label1.Location.ToString();
+                var anchoPadre = label2.Width;
+                var anchoHijo = label1.Width;
+                var margen = label2.Location.X;
+
+                var alturaPadre = label2.Height;
+                var alturaHijo = label1.Height;
+                var margenY = label2.Location.Y;
+
+                var centroX = ((anchoPadre + anchoHijo) / 2) - margen;
+                var centroY = ((alturaPadre + alturaHijo) / 2) - margen;
+
+                //centrado asoluto al formulario
+                 anchoPadre = this.Width;
+                 anchoHijo = label1.Width;
+               
+
+                 alturaPadre = this.Height;
+                 alturaHijo = label1.Height;
+               
+
+                 centroX = ((anchoPadre + anchoHijo) / 2) - margen;
+                 centroY = ((alturaPadre + alturaHijo) / 2) - margen;
+
+                //MessageBox.Show("resetiando el juego");
+                label1.Location = new System.Drawing.Point(centroX, centroY);
+
+            }
+            
+            //cambiando de color
+            if (keyValue == 67)
+            {
+                MessageBox.Show("cambiando de color");
+            }
+
+            //2
+            if (keyValue == 39 || keyValue == 68)
+            {
+                if (posicionX >= 342)
+                {
+                    return;
+                }
+                else
+                {
+                     label1.Location = new System.Drawing.Point(posicionX + 5, posicionY);
+                     label3.Text = label1.Location.ToString();
+                }
+               
                 //MessageBox.Show("derecha");
             }
-            if(keyValue == 38)
+
+            //3
+            if (keyValue == 38 || keyValue == 87)
             {
-                label1.Location = new System.Drawing.Point(posicionX , posicionY - 5);
-                label3.Text = label1.Location.ToString();
+                if (posicionY <= 20)
+                {
+                    return;
+                }
+                else
+                {
+                    label1.Location = new System.Drawing.Point(posicionX , posicionY - 5);
+                    label3.Text = label1.Location.ToString();
+                }
+                
                 //MessageBox.Show("arriba");
             }
-            if(keyValue == 40)
+            
+
+
+            //4
+            if (keyValue == 40 || keyValue == 83)
             {
-                label1.Location = new System.Drawing.Point(posicionX, posicionY + 5);
-                label3.Text = label1.Location.ToString();
+                if (posicionY >= 385)
+                {
+                    return;
+                }
+                else
+                {
+                    label1.Location = new System.Drawing.Point(posicionX, posicionY + 5);
+                    label3.Text = label1.Location.ToString();
+                }
+                
                 //MessageBox.Show("abajo");
             }
 
