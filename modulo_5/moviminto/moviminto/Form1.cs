@@ -65,10 +65,13 @@ namespace moviminto
 
                  alturaPadre = this.Height;
                  alturaHijo = label1.Height;
-               
 
-                 centroX = ((anchoPadre + anchoHijo) / 2) - margen;
-                 centroY = ((alturaPadre + alturaHijo) / 2) - margen;
+                //border
+                 var borderX = 18;
+                 var borderY = 47;
+
+                 centroX = (anchoPadre / 2) - (anchoHijo / 2) - borderX;
+                 centroY = (alturaPadre / 2) - (alturaHijo / 2) - borderY;
 
                 //MessageBox.Show("resetiando el juego");
                 label1.Location = new System.Drawing.Point(centroX, centroY);
@@ -78,7 +81,27 @@ namespace moviminto
             //cambiando de color
             if (keyValue == 67)
             {
-                MessageBox.Show("cambiando de color");
+                //MessageBox.Show("cambiando de color");
+
+                var random = new Random();
+
+                //var numeroAleatorio = random.Next(0, 4);
+
+                //colores rba
+                var red = random.Next(255);
+                var green = random.Next(255);
+                var blue = random.Next(255);
+
+                label1.BackColor = Color.FromArgb(red, green, blue);
+                label1.BackColor = Color.FromArgb(red, green, blue);
+
+
+                // Listado de colores
+                 //Color[] colores = {Color.Blue, Color.Red, Color.Green, Color.Pink, Color.Peru };
+
+                 //label1.BackColor = colores[numeroAleatorio];
+
+                //MessageBox.Show(colores [numeroAleatorio].ToString());
             }
 
             //2
