@@ -11,7 +11,10 @@ using System.Windows.Forms;
 namespace moviminto
 {
     public partial class Form1 : Form
+
     {
+        public bool mouseAtivado = false;
+
         public Form1()
         {
             InitializeComponent();
@@ -76,8 +79,50 @@ namespace moviminto
                 //MessageBox.Show("resetiando el juego");
                 label1.Location = new System.Drawing.Point(centroX, centroY);
 
-            }
-            
+
+                 } 
+            // Aumentar de tamaño
+
+                    if (keyValue == 107)
+                     {
+                         if (label1.Width < 200)
+                         {
+                             label1.Width += 1;
+                             label1.Height += 1;
+                         }
+                        
+                     }
+            // Disminuir de tamaño
+                    if (keyValue == 109)
+                    {
+                        if (label1.Width > 20)
+                        {
+                            label1.Width -= 1;
+                            label1.Height -= 1;
+                        }
+                       
+                    }
+                //movimiento del mauser   
+                   
+                    if (keyValue == 77)
+                     {
+                       
+
+                        // si está activo
+                         if (mouseAtivado)
+                         {
+                             MessageBox.Show("Desativado movimiento con el mause");
+                             mouseAtivado = false;
+                             lblFlag.Text = "Desativado";          
+                         }
+                         else
+                         {
+                             MessageBox.Show("Activado movimiento con el mause");
+                             mouseAtivado = true;
+                             lblFlag.Text = "Activado";  
+                         }
+                      }
+
             //cambiando de color
             if (keyValue == 67)
             {
@@ -156,6 +201,7 @@ namespace moviminto
 
     
         }
+        
 
         private void Form1_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -173,6 +219,33 @@ namespace moviminto
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void label1_MouseMove(object sender, MouseEventArgs e)
+        {
+           
+        }
+
+        private void label2_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (mouseAtivado)
+            {
+                 var locationX = e.Location.X;
+                 var locationY = e.Location.Y;
+
+                 label1.Location = new System.Drawing.Point(locationX, locationY);
+                 //System.Diagnostics.Trace.WriteLine(locationX);
+                 //System.Diagnostics.Trace.WriteLine(locationY);
+            }
+
+
+
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
