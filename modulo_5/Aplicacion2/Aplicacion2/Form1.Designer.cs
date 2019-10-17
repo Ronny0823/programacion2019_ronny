@@ -31,14 +31,14 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtnombre = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtcorreo = new System.Windows.Forms.TextBox();
+            this.txtcontraseña = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtusuario = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtbio = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
@@ -51,7 +51,7 @@
             this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Location = new System.Drawing.Point(30, 438);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 34);
+            this.button1.Size = new System.Drawing.Size(312, 34);
             this.button1.TabIndex = 0;
             this.button1.Text = "Registrarme";
             this.button1.UseVisualStyleBackColor = false;
@@ -85,14 +85,16 @@
             this.label3.Text = "Nombre";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // textBox1
+            // txtnombre
             // 
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.textBox1.Location = new System.Drawing.Point(26, 93);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(191, 20);
-            this.textBox1.TabIndex = 4;
+            this.txtnombre.BackColor = System.Drawing.Color.White;
+            this.txtnombre.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtnombre.Location = new System.Drawing.Point(26, 93);
+            this.txtnombre.MaxLength = 30;
+            this.txtnombre.Name = "txtnombre";
+            this.txtnombre.Size = new System.Drawing.Size(316, 20);
+            this.txtnombre.TabIndex = 4;
+            this.txtnombre.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label4
             // 
@@ -100,30 +102,31 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(29, 137);
+            this.label4.Location = new System.Drawing.Point(23, 133);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(111, 17);
             this.label4.TabIndex = 5;
             this.label4.Text = "Correo de Gmail";
             // 
-            // textBox2
+            // txtcorreo
             // 
-            this.textBox2.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
-            this.textBox2.Location = new System.Drawing.Point(26, 153);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 6;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtcorreo.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
+            this.txtcorreo.Location = new System.Drawing.Point(26, 153);
+            this.txtcorreo.MaxLength = 30;
+            this.txtcorreo.Name = "txtcorreo";
+            this.txtcorreo.Size = new System.Drawing.Size(233, 20);
+            this.txtcorreo.TabIndex = 6;
+            this.txtcorreo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox3
+            // txtcontraseña
             // 
-            this.textBox3.Location = new System.Drawing.Point(26, 212);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.PasswordChar = '.';
-            this.textBox3.Size = new System.Drawing.Size(151, 20);
-            this.textBox3.TabIndex = 7;
-            this.textBox3.UseSystemPasswordChar = true;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.txtcontraseña.Location = new System.Drawing.Point(26, 260);
+            this.txtcontraseña.Name = "txtcontraseña";
+            this.txtcontraseña.PasswordChar = '.';
+            this.txtcontraseña.Size = new System.Drawing.Size(316, 20);
+            this.txtcontraseña.TabIndex = 7;
+            this.txtcontraseña.UseSystemPasswordChar = true;
+            this.txtcontraseña.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label5
             // 
@@ -131,20 +134,20 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(27, 196);
+            this.label5.Location = new System.Drawing.Point(23, 240);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(81, 17);
             this.label5.TabIndex = 8;
             this.label5.Text = "Contraseña";
             // 
-            // textBox4
+            // txtusuario
             // 
-            this.textBox4.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
-            this.textBox4.Location = new System.Drawing.Point(26, 268);
-            this.textBox4.MaxLength = 12;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(121, 20);
-            this.textBox4.TabIndex = 9;
+            this.txtusuario.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
+            this.txtusuario.Location = new System.Drawing.Point(26, 211);
+            this.txtusuario.MaxLength = 20;
+            this.txtusuario.Name = "txtusuario";
+            this.txtusuario.Size = new System.Drawing.Size(316, 20);
+            this.txtusuario.TabIndex = 9;
             // 
             // label6
             // 
@@ -152,20 +155,20 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(23, 248);
+            this.label6.Location = new System.Drawing.Point(23, 191);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(129, 17);
             this.label6.TabIndex = 10;
             this.label6.Text = "Nombre de usuario";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
-            // textBox5
+            // txtbio
             // 
-            this.textBox5.Location = new System.Drawing.Point(26, 318);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(316, 114);
-            this.textBox5.TabIndex = 11;
+            this.txtbio.Location = new System.Drawing.Point(26, 318);
+            this.txtbio.Multiline = true;
+            this.txtbio.Name = "txtbio";
+            this.txtbio.Size = new System.Drawing.Size(316, 114);
+            this.txtbio.TabIndex = 11;
             // 
             // label7
             // 
@@ -175,9 +178,9 @@
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(23, 302);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(28, 17);
+            this.label7.Size = new System.Drawing.Size(95, 17);
             this.label7.TabIndex = 12;
-            this.label7.Text = "Bio";
+            this.label7.Text = "Bio (opcional)";
             // 
             // label8
             // 
@@ -185,11 +188,12 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(132, 156);
+            this.label8.Location = new System.Drawing.Point(265, 153);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(77, 15);
             this.label8.TabIndex = 13;
             this.label8.Text = "@gmail.com";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // textBox6
             // 
@@ -216,14 +220,14 @@
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txtbio);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtusuario);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtcontraseña);
+            this.Controls.Add(this.txtcorreo);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtnombre);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
@@ -244,14 +248,14 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtnombre;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtcorreo;
+        private System.Windows.Forms.TextBox txtcontraseña;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtusuario;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtbio;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBox6;
