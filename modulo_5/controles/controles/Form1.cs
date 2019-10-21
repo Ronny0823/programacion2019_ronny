@@ -44,5 +44,47 @@ namespace controles
             //Eliminar
             comboBox1.Items.Remove(selecconado);
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            //Mostrar el colorDialog
+
+            if (colorDialog1.ShowDialog() == DialogResult.OK)
+            {
+                tabPage3.BackColor = colorDialog1.Color;
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            var texto = textBox3.Text;
+
+            if (string.IsNullOrEmpty(texto))
+            {
+                MessageBox.Show("Debe escribir un texto");
+                     return;
+            }
+
+
+               // Agregar
+             listBox1.Items.Add(texto);
+
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            var selecconado = listBox1.SelectedItem;
+
+            if (selecconado == null)
+            {
+                MessageBox.Show("Debe seleccionar un elemeto de la lista");
+                return;
+            }
+
+            //Eliminar
+            listBox1.Items.Remove(selecconado);
+
+        }
     }
 }
