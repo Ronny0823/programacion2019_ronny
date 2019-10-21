@@ -44,6 +44,7 @@
             this.button5 = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -120,6 +121,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.checkBox2);
             this.tabPage2.Controls.Add(this.listBox1);
             this.tabPage2.Controls.Add(this.checkBox1);
             this.tabPage2.Controls.Add(this.button5);
@@ -198,10 +200,11 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(23, 68);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(80, 17);
+            this.checkBox1.Size = new System.Drawing.Size(111, 17);
             this.checkBox1.TabIndex = 3;
-            this.checkBox1.Text = "checkBox1";
+            this.checkBox1.Text = "Seleccion multiple";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // listBox1
             // 
@@ -210,10 +213,22 @@
             "Mango",
             "Pera",
             "Chinola"});
-            this.listBox1.Location = new System.Drawing.Point(23, 92);
+            this.listBox1.Location = new System.Drawing.Point(23, 91);
+            this.listBox1.MultiColumn = true;
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(120, 95);
             this.listBox1.TabIndex = 4;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(153, 68);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(142, 17);
+            this.checkBox2.TabIndex = 5;
+            this.checkBox2.Text = "Ordenar alfabeticamente";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // Form1
             // 
@@ -252,6 +267,7 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.CheckBox checkBox2;
     }
 }
 
