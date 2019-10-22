@@ -80,6 +80,7 @@
             this.button6 = new System.Windows.Forms.Button();
             this.label21 = new System.Windows.Forms.Label();
             this.textBox18 = new System.Windows.Forms.TextBox();
+            this.textBox17 = new System.Windows.Forms.TextBox();
             label12 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -108,6 +109,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.textBox17);
             this.tabPage1.Controls.Add(this.label9);
             this.tabPage1.Controls.Add(this.label8);
             this.tabPage1.Controls.Add(this.button1);
@@ -593,6 +595,14 @@
             this.textBox18.Size = new System.Drawing.Size(129, 194);
             this.textBox18.TabIndex = 3;
             // 
+            // textBox17
+            // 
+            this.textBox17.Enabled = false;
+            this.textBox17.Location = new System.Drawing.Point(159, 125);
+            this.textBox17.Name = "textBox17";
+            this.textBox17.Size = new System.Drawing.Size(100, 29);
+            this.textBox17.TabIndex = 6;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -673,6 +683,7 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.TextBox textBox18;
         private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.TextBox textBox17;
 
     }
 }

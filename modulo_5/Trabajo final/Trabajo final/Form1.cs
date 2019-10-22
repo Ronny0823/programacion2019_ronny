@@ -37,9 +37,9 @@ namespace Trabajo_final
             var valor1 = Convert.ToInt16(textBox1.Text);
             var valor2 = Convert.ToInt16(textBox2.Text);
 
-            var button1 = Math.Sqrt(valor1 * valor1 + valor2 * valor2);
+            var calcular = Math.Sqrt(valor1 * valor1 + valor2 * valor2);
 
-            MessageBox.Show("");
+            MessageBox.Show(calcular.ToString());
          
         }
     }
