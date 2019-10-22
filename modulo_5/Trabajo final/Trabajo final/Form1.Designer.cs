@@ -454,35 +454,35 @@
             // 
             // textBox11
             // 
-            this.textBox11.Location = new System.Drawing.Point(168, 57);
+            this.textBox11.Location = new System.Drawing.Point(161, 57);
             this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(100, 29);
+            this.textBox11.Size = new System.Drawing.Size(115, 29);
             this.textBox11.TabIndex = 1;
             // 
             // textBox12
             // 
-            this.textBox12.Location = new System.Drawing.Point(168, 113);
+            this.textBox12.Location = new System.Drawing.Point(161, 113);
             this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(100, 29);
+            this.textBox12.Size = new System.Drawing.Size(107, 29);
             this.textBox12.TabIndex = 2;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(188, 89);
+            this.label14.Location = new System.Drawing.Point(146, 89);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(45, 21);
+            this.label14.Size = new System.Drawing.Size(149, 21);
             this.label14.TabIndex = 3;
-            this.label14.Text = "Edad";
+            this.label14.Text = "Año de nacimiento";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(188, 33);
+            this.label15.Location = new System.Drawing.Point(181, 33);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(40, 21);
+            this.label15.Size = new System.Drawing.Size(87, 21);
             this.label15.TabIndex = 4;
-            this.label15.Text = "Año";
+            this.label15.Text = "Año a tual";
             // 
             // button4
             // 
@@ -613,9 +613,9 @@
             // textBox19
             // 
             this.textBox19.Enabled = false;
-            this.textBox19.Location = new System.Drawing.Point(168, 160);
+            this.textBox19.Location = new System.Drawing.Point(161, 160);
             this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(108, 29);
+            this.textBox19.Size = new System.Drawing.Size(115, 29);
             this.textBox19.TabIndex = 6;
             // 
             // Form1
