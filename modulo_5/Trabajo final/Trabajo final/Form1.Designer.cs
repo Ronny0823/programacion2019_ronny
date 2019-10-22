@@ -81,6 +81,7 @@
             this.label21 = new System.Windows.Forms.Label();
             this.textBox18 = new System.Windows.Forms.TextBox();
             this.textBox17 = new System.Windows.Forms.TextBox();
+            this.textBox19 = new System.Windows.Forms.TextBox();
             label12 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -164,6 +165,7 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.textBox19);
             this.tabPage4.Controls.Add(this.button4);
             this.tabPage4.Controls.Add(this.label15);
             this.tabPage4.Controls.Add(this.label14);
@@ -369,14 +371,16 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(206, 32);
             this.button2.TabIndex = 5;
-            this.button2.Text = "Calcular";
+            this.button2.Text = "Calcular promedio";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(174, 148);
+            this.textBox7.Enabled = false;
+            this.textBox7.Location = new System.Drawing.Point(123, 148);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(108, 29);
+            this.textBox7.Size = new System.Drawing.Size(206, 29);
             this.textBox7.TabIndex = 6;
             // 
             // label10
@@ -397,9 +401,10 @@
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(187, 153);
+            this.textBox9.Enabled = false;
+            this.textBox9.Location = new System.Drawing.Point(161, 153);
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 29);
+            this.textBox9.Size = new System.Drawing.Size(140, 29);
             this.textBox9.TabIndex = 2;
             // 
             // button3
@@ -410,6 +415,7 @@
             this.button3.TabIndex = 3;
             this.button3.Text = "Calcular";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label11
             // 
@@ -480,12 +486,13 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(168, 161);
+            this.button4.Location = new System.Drawing.Point(168, 195);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(100, 31);
             this.button4.TabIndex = 5;
             this.button4.Text = "Imprimir";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -598,10 +605,17 @@
             // textBox17
             // 
             this.textBox17.Enabled = false;
-            this.textBox17.Location = new System.Drawing.Point(159, 125);
+            this.textBox17.Location = new System.Drawing.Point(79, 125);
             this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(100, 29);
+            this.textBox17.Size = new System.Drawing.Size(266, 29);
             this.textBox17.TabIndex = 6;
+            // 
+            // textBox19
+            // 
+            this.textBox19.Location = new System.Drawing.Point(168, 160);
+            this.textBox19.Name = "textBox19";
+            this.textBox19.Size = new System.Drawing.Size(100, 29);
+            this.textBox19.TabIndex = 6;
             // 
             // Form1
             // 
@@ -684,6 +698,7 @@
         private System.Windows.Forms.TextBox textBox18;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.TextBox textBox19;
 
     }
 }

@@ -34,13 +34,44 @@ namespace Trabajo_final
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var valor1 = Convert.ToInt16(textBox1.Text);
-            var valor2 = Convert.ToInt16(textBox2.Text);
 
-            var calcular = Math.Sqrt(valor1 * valor1 + valor2 * valor2);
+            double calcular;
+            var valor1 = Convert.ToDouble(textBox1.Text);
+            var valor2 = Convert.ToDouble(textBox2.Text);
 
-            MessageBox.Show(calcular.ToString());
+            calcular = Math.Sqrt(valor1 * valor1 + valor2 * valor2);
+
+            textBox17.Text = ("Resultado: " + calcular);
          
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            double calcularpromedio;
+            var nota1 = Convert.ToDouble(textBox3.Text);
+            var nota2 = Convert.ToDouble(textBox4.Text);
+            var nota3 = Convert.ToDouble(textBox5.Text);
+            var nota4 = Convert.ToDouble(textBox6.Text);
+
+            calcularpromedio = (nota1 + nota2 + nota3 + nota4) / 4;
+
+            textBox7.Text = ("Resultado: " + calcularpromedio.ToString()); 
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            double calcular;
+            var velocidad = Convert.ToDouble(textBox8.Text);
+            var horas = Convert.ToDouble(textBox10.Text);
+
+            calcular = (velocidad * horas);
+            textBox9.Text = ("Resultado: " + calcular.ToString() + "km");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            var nacimirnto = Convert.ToDouble(textBox11.Text);
         }
     }
 }
