@@ -68,17 +68,23 @@ namespace controles
 
                // Agregar
              listBox1.Items.Add(texto);
-
+            
 
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
+            for (int x = listBox1.SelectedIndices.Count - 1; x >= 0; x--)
+            {
+                int idx = listBox1.SelectedIndices[x];
+                listBox1.Items.RemoveAt(idx);
+            } 
+
             var selecconado = listBox1.SelectedItem;
 
             if (selecconado == null)
             {
-                MessageBox.Show("Debe seleccionar un elemeto de la lista");
+               // MessageBox.Show("Debe seleccionar un elemeto de la lista");
                 return;
             }
 
