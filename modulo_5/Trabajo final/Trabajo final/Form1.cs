@@ -71,7 +71,14 @@ namespace Trabajo_final
 
         private void button4_Click(object sender, EventArgs e)
         {
+            double calcular;
             var nacimirnto = Convert.ToDouble(textBox11.Text);
+            var edad = Convert.ToDouble(textBox12.Text);
+
+            calcular = (nacimirnto - edad);
+            textBox19.Text = ("Resultado: " + calcular.ToString());
+
+
         }
     }
 }

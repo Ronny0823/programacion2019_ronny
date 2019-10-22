@@ -612,9 +612,10 @@
             // 
             // textBox19
             // 
+            this.textBox19.Enabled = false;
             this.textBox19.Location = new System.Drawing.Point(168, 160);
             this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(100, 29);
+            this.textBox19.Size = new System.Drawing.Size(108, 29);
             this.textBox19.TabIndex = 6;
             // 
             // Form1
