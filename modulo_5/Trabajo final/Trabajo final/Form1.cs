@@ -205,11 +205,11 @@ namespace Trabajo_final
         {
             
 
-            for (var i = 0; i <= 100; i++)
+            for (var i = 2; i <= 100; i++)
             {
                 if (i % 2 == 0)
                 {
-                    textBox18.Text = ("Resultado: " + i.ToString());
+                    textBox18.Text += i.ToString() + " ";
                 }
             }
         }
