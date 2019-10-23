@@ -73,12 +73,145 @@ namespace Trabajo_final
         {
             double calcular;
             var nacimirnto = Convert.ToDouble(textBox11.Text);
-            var edad = Convert.ToDouble(textBox12.Text);
+            var año = Convert.ToDouble(textBox12.Text);
 
-            calcular = (nacimirnto - edad);
+            calcular = (nacimirnto - año);
             textBox19.Text = ("Resultado: " + calcular.ToString());
 
 
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+           
+            var dia = Convert.ToDouble(textBox14.Text);
+
+            if (dia == 1)
+            {
+                textBox13.Text = ("Resultado: Lunes");
+            }
+
+            else if (dia == 2)
+            {
+                textBox13.Text = ("Resultado: Martes");
+            }
+
+            else if (dia == 3)
+            {
+                textBox13.Text = ("Resultado: Miercoles");
+            }
+
+            else if (dia == 4)
+            {
+                textBox13.Text = ("Resultado: Jueves");
+            }
+
+             else if (dia == 5)
+            {
+                textBox13.Text = ("Resultado: Viernes");
+            }
+
+             else if (dia == 6)
+            {
+                textBox13.Text = ("Resultado: Sabado");
+            }
+
+             else if (dia == 7)
+            {
+                textBox13.Text = ("Resultado: Domingo");
+            }
+
+
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+           
+            var año = Convert.ToDouble(textBox16.Text);
+
+            if (año == 1)
+            {
+                textBox15.Text = ("Resultado: Enero");
+            }
+
+            if (año == 2)
+            {
+                textBox15.Text = ("Resultado: Febrero");
+            }
+
+            if (año == 3)
+            {
+                textBox15.Text = ("Resultado: Marzo");
+            }
+
+            if (año == 4)
+            {
+                textBox15.Text = ("Resultado: Abril");
+            }
+
+            if (año == 5)
+            {
+                textBox15.Text = ("Resultado: Mayo");
+            }
+
+            if (año == 6)
+            {
+                textBox15.Text = ("Resultado: Junio");
+            }
+
+            if (año == 7)
+            {
+                textBox15.Text = ("Resultado: Julio");
+            }
+
+            if (año == 8)
+            {
+                textBox15.Text = ("Resultado: Agosto");
+            }
+
+            if (año == 9)
+            {
+                textBox15.Text = ("Resultado: Septiembre");
+            }
+
+            if (año == 10)
+            {
+                textBox15.Text = ("Resultado: Octubre");
+            }
+
+            if (año == 11)
+            {
+                textBox15.Text = ("Resultado: Noviembre");
+            }
+
+            if (año == 12)
+            {
+                textBox15.Text = ("Resultado: Diciembre");
+            }
+        }
+
+        private void textBox18_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label21_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            
+
+            for (var i = 0; i <= 100; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    textBox18.Text = ("Resultado: " + i.ToString());
+                }
+            }
         }
     }
 }
