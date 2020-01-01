@@ -91,4 +91,8 @@ p{
     10%, 15%, 60% {
         text-shadow: none;
     } 
+    .icono{ 
+        font: 19em sans-serif;
+    }
+    
 }
